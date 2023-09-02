@@ -1,0 +1,165 @@
+* {
+  padding: 0;
+  margin: 0;
+  @import url("https://fonts.googleapis.com/css2?family=Jost:wght@100;300;400;800;900&family=Poppins:wght@300;500;700;800;900&display=swap");
+}
+
+body {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+
+  overflow-x: hidden;
+}
+
+.background {
+  background-color: black;
+  top: 0;
+}
+
+header {
+  height: 10vh;
+  width: 100%;
+  /* background-color: rgb(255, 255, 255); */
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  top: 0;
+  position: sticky;
+  margin: 0;
+  padding: 0;
+}
+
+.glass {
+  /* overflow: hidden; */
+  background-color: rgba(255, 255, 255, 0.1);
+  /* border: 2px solid rgba( 255, 255, 255, 0.05); */
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  
+}
+
+.page1 {
+  height: 100vh;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 50% 50%;
+
+}
+
+.left {
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.page2 {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.page3 {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.page4 {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.square1 {
+  height: 15vh;
+  width: 15vw;
+  position: absolute;
+  background-color: red;
+  top: 15vh;
+  left: 23vw;
+  filter: blur(100px) saturate(180%);
+  overflow: hidden;
+}
+
+.square2 {
+  height: 15vh;
+  width: 15vw;
+  position: absolute;
+  background-color: rgb(38, 0, 255);
+  top: 50vh;
+  right: 70vw;
+  left: 70vw;
+  filter: blur(200px) saturate(180%);
+}
+
+.square3 {
+  height: 30vh;
+  width: 30vw;
+  position: absolute;
+  background-color: rgb(13, 151, 36);
+  top: 250vh;
+  left: 60vw;
+  filter: blur(200px) saturate(180%);
+  overflow: hidden;
+}
+
+.square4 {
+  height: 30vh;
+  width: 30vw;
+  position: absolute;
+  background-color: rgb(55, 255, 48);
+  top: 80vh;
+  left: 20vw;
+  filter: blur(200px) saturate(180%);
+  overflow: hidden;
+}
+
+.title,
+.aboutMe, .name {
+  color: white;
+  size: 100px;
+  font-family: "Jost", sans-serif;
+}
+
+nav {
+  overflow: hidden;
+}
+
+nav ul {
+  /* align-items: center; */
+  /* justify-content: center; */
+  display: flex;
+
+  overflow: hidden;
+  /* height: 10vh; */
+}
+
+nav ul li {
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  overflow-x: hidden;
+
+  /* margin:0 10vh 0 10vh; */
+}
+
+nav ul li a {
+  display: block;
+  align-items: center;
+  justify-items: center;
+  margin: 0 3vw 0 3vw;
+  padding: 22px 10px 22px 10px;
+  text-decoration: none;
+  color: white;
+  text-align: center;
+  font-size: 1.2em;
+  font-family: 'Poppins', sans-serif;
+}
