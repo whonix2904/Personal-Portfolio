@@ -163,3 +163,17 @@ nav ul li a {
   font-size: 1.2em;
   font-family: 'Poppins', sans-serif;
 }
+
+.circle {
+  width: 500px;
+  height: 500px;
+  background-color: red;
+  border-radius: 50%;
+}
+
+
+.right, .circle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
