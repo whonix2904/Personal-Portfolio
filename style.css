@@ -36,7 +36,6 @@ header {
   /* border: 2px solid rgba( 255, 255, 255, 0.05); */
   -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
-  
 }
 
 .page1 {
@@ -44,7 +43,6 @@ header {
   width: 100%;
   display: grid;
   grid-template-columns: 50% 50%;
-
 }
 
 .left {
@@ -123,7 +121,8 @@ header {
 }
 
 .title,
-.aboutMe, .name {
+.aboutMe,
+.name {
   color: white;
   size: 100px;
   font-family: "Jost", sans-serif;
@@ -161,19 +160,40 @@ nav ul li a {
   color: white;
   text-align: center;
   font-size: 1.2em;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 .circle {
-  width: 500px;
-  height: 500px;
-  background-color: red;
+  width: 35vw;
+  height: 35vw;
+  background-color: rgb(255, 255, 255);
   border-radius: 50%;
+  
+  
+  
 }
 
-
-.right, .circle {
+.right,
+.circle {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.circle img {
+  border-radius: 50%;
+  width: 34vw;
+  height: 34vw;
+ 
+}
+
+.square5 {
+  width: 30vw;
+  height: 30vw;
+  background-color: red;
+  position: absolute;
+  top: 30vh;
+  left: 58vw;
+  border-radius: 50%;
+  filter: blur(100px);
 }
