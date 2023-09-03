@@ -226,3 +226,7 @@ nav ul li a {
 .left, .right {
   z-index: 1;
 }
+
+.aboutMe {
+font-size: 1.2em;
+}
