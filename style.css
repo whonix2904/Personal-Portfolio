@@ -15,6 +15,7 @@ body {
 .background {
   background-color: black;
   top: 0;
+  
 }
 
 header {
@@ -28,6 +29,7 @@ header {
   position: sticky;
   margin: 0;
   padding: 0;
+  z-index: 10;
 }
 
 .glass {
@@ -43,6 +45,7 @@ header {
   width: 100%;
   display: grid;
   grid-template-columns: 50% 50%;
+
 }
 
 .left {
@@ -50,6 +53,7 @@ header {
   align-items: baseline;
   justify-content: center;
   flex-direction: column;
+ padding-left: 5vw;
 }
 
 .page2 {
@@ -124,8 +128,22 @@ header {
 .aboutMe,
 .name {
   color: white;
-  size: 100px;
   font-family: "Jost", sans-serif;
+ 
+}
+
+.title {
+font-size: 3em;
+font-weight: 500;
+}
+
+.title span {
+  
+  background-color: #0093E9;
+  background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
+  font-weight: 900;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 nav {
@@ -166,11 +184,13 @@ nav ul li a {
 .circle {
   width: 35vw;
   height: 35vw;
-  background-color: rgb(255, 255, 255);
+  /* background-color: rgb(255, 255, 255); */
   border-radius: 50%;
   
-  
-  
+  background-color: rgba(255, 255, 255, 0.3);
+  border: 2px solid rgba( 255, 255, 255, 0.1);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
 }
 
 .right,
@@ -178,7 +198,10 @@ nav ul li a {
   display: flex;
   align-items: center;
   justify-content: center;
+ 
 }
+
+
 
 .circle img {
   border-radius: 50%;
@@ -196,4 +219,8 @@ nav ul li a {
   left: 58vw;
   border-radius: 50%;
   filter: blur(100px);
+}
+
+.left, .right {
+  z-index: 1;
 }
