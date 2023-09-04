@@ -230,3 +230,22 @@ nav ul li a {
 .aboutMe {
 font-size: 1.2em;
 }
+
+.page3 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.page3 {
+  background-color: red;
+}
+
+.main-project {
+  background-color: blue;
+}
+
+.mini-project {
+  background-color: green;
+}
