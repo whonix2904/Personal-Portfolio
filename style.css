@@ -264,9 +264,8 @@ font-size: 1.2em;
 
 .imagesofproject {
   overflow-y: scroll;
- width: 90vw;
+  height: 40vh;
  display: flex;
- align-self: start;
  flex-direction: column;
   
 }
