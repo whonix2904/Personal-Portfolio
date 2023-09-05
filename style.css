@@ -15,6 +15,10 @@ body {
   overflow-x: hidden;
 }
 
+body::-webkit-scrollbar{
+  display: none;
+}
+
 .background {
   background-color: black;
   top: 0;
@@ -253,19 +257,21 @@ font-size: 1.2em;
 
 
 .imagesofproject img {
-  width: auto; 
-  height: 30vh; 
-  overflow: auto; 
+  width: 30vw; 
+  height: auto; 
   aspect-ratio: 16/9;
 }
 
 .imagesofproject {
-  display: grid;
-  grid: auto / repeat(3, 1fr);
-  overflow-x: scroll;
+  overflow-y: scroll;
  width: 90vw;
- scrollbar-arrow-color: red;
+ display: flex;
+ align-self: start;
+ flex-direction: column;
   
-  
+}
+
+.imagesofproject::-webkit-scrollbar{
+  display: none;
 }
 
