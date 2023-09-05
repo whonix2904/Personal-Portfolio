@@ -6,6 +6,7 @@
 
 html {
   scroll-behavior: smooth;
+  scrollbar-arrow-color: red;
 }
 body {
   align-items: center;
@@ -239,13 +240,32 @@ font-size: 1.2em;
 }
 
 .page3 {
-  background-color: red;
+  /* background-color: red; */
 }
 
-.main-project {
+/* .main-project {
   background-color: blue;
 }
 
 .mini-project {
   background-color: green;
+} */
+
+
+.imagesofproject img {
+  width: auto; 
+  height: 30vh; 
+  overflow: auto; 
+  aspect-ratio: 16/9;
 }
+
+.imagesofproject {
+  display: grid;
+  grid: auto / repeat(3, 1fr);
+  overflow-x: scroll;
+ width: 90vw;
+ scrollbar-arrow-color: red;
+  
+  
+}
+
