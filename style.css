@@ -281,4 +281,27 @@ font-size: 1.2em;
   border-radius: 20px;
 }
 
+.tab-content ul li img {
+height: 50px;
+width: 50px;
+}
 
+.tab-title {
+  display: flex;
+  gap: 5vw;
+  margin: 20px 0;
+}
+
+.tab-content ul {
+  display: flex;
+  align-items: center;
+  justify-content: baseline;
+  
+}
+
+.tab-content ul li {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  margin: 0 20px;
+}
