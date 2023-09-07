@@ -273,9 +273,12 @@ font-size: 1.2em;
   display: none;
 }
 
-.image img {
-  height: 80vh;
-  width: auto;
+.left .image img {
+  height: 70vh;
+  width:auto;
+  aspect-ratio: 11/16;
+  object-fit: cover;
+  border-radius: 20px;
 }
 
 
