@@ -1,6 +1,7 @@
 var tabs = document.getElementsByClassName('tab-link');
 var contents = document.getElementsByClassName('tab-content');
 
+
 function click(tabname) {
     for (var i = 0; i < tabs.length; i++) {
         tabs[i].classList.remove("active-link");
