@@ -9,5 +9,7 @@ function openTab(event, tabName) {
     for(i = 0; i < tabContent.lenght; i++){
         tabContent[i].classList.remove("active-content");
     }
-    document.getElementById('tabName').classList.add(active-link);
+    document.getElementById('tabName').classList.add('active-link')
+    event.currentTarget.className+= " active"
+
 }
