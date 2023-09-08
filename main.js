@@ -1,20 +1,13 @@
-var tabs = document.getElementsByClassName('tab-link');
-var contents = document.getElementsByClassName('tab-content');
-
-
-function click(tabname) {
-    for (var i = 0; i < tabs.length; i++) {
-        tabs[i].classList.remove("active-link");
-    }
-    for (var i = 0; i < contents.length; i++) {
-        contents[i].classList.remove("active-content");
+function openTab(event, tabName) {
+    var i, tabLink, tabContent;
+    tabLink = document.getElementsByClassName('tab-link');
+    for(i = 0; i < tabLink.lenght; i++){
+        tabContent[i].classList.remove("active-link");
     }
 
-    var clickedTab = document.querySelector('[data-tab="' + tabname + '"]');
-    clickedTab.classList.add("active-link");
-
-    var tabContent = document.getElementById(tabname);
-    if (tabContent) {
-        tabContent.classList.add("active-content");
+    tabContent = document.getElementsByClassName('tab-content');
+    for(i = 0; i < tabContent.lenght; i++){
+        tabContent[i].classList.remove("active-content");
     }
+    document.getElementById('tabName').classList.add(active-link);
 }
