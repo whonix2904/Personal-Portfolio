@@ -85,6 +85,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
+  
 }
 
 /* .page4 {
@@ -150,6 +151,14 @@ header {
 .title {
 font-size: 3em;
 font-weight: 500;
+}
+
+.projecttitle {
+  background-color: #0093E9;
+  background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
+  font-weight: 900;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .title span {
@@ -236,12 +245,21 @@ nav ul li a {
   filter: blur(100px);
 }
 
-.left, .right {
+.left, .right ,.main-project {
   z-index: 1;
 }
 
 .aboutMe {
-font-size: 1.2em;
+font-size: 1.2rem;
+}
+
+.aboutMe .heading h1 {
+  font-size: 3rem;
+  background-color: #0093E9;
+  background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
+  font-weight: 900;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 /* .page3 {
@@ -251,15 +269,25 @@ font-size: 1.2em;
   flex-direction: column;
 } */
 
-.page3 {
-  /* background-color: red; */
-}
 
-/* .main-project {
-  background-color: blue;
-}
 
-.mini-project {
+ .main-project {
+  
+  width: 100%;
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  flex-direction: column;
+  padding-top: 100px;
+  padding-right: 5vw;
+  padding-left: 5vw;
+} 
+
+/* .main-project .title {
+  align-items: baseline;
+} */
+
+/* .mini-project {
   background-color: green;
 } */
 
@@ -267,6 +295,37 @@ font-size: 1.2em;
 .imagesofproject img {
   aspect-ratio: 16/9;
   height:30vh;
+  border-radius: 5px;
+}
+
+.imagesofproject{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 2rem;
+ 
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 85vh;
+  overflow: hidden;
+  overflow-y: scroll;
+  
+}
+
+.projectList {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.projectList h1 {
+  align-self: baseline;
+  padding-left: 2vw;
+  font-size: 2rem;
+  font-family: "poppins",sans-serif;
+  color: white;
 }
 
 .imagesofproject::-webkit-scrollbar{
@@ -285,6 +344,15 @@ font-size: 1.2em;
 height: 70px;
 width: 70px;
 }
+
+.tab-link{
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
 
 .tab-title {
   display: flex;
@@ -313,7 +381,13 @@ width: 70px;
 }
 .active-content {
   display: block;
+  position:fixed;
 }
+
+.page2 .right .aboutMe{
+  bottom: 20vh;
+  position: relative;
+} 
 
 .messageMe {
   /* padding-left: 10vw; */
@@ -377,7 +451,7 @@ ul h1 {
   font-weight: 500;
 }
 
-li h3, li p {
+.personal-info li h3, .personal-info li p {
   font-family: "poppins", sans-serif;
   margin:2vh 0px;
 }
@@ -404,3 +478,40 @@ form button {
   font-weight: 700;
 }
 
+#education ul li {
+  display: grid;
+  grid-template-columns:  5vw 5vw 20vw ;
+  grid-template-rows: 1fr 1fr;
+  align-self: start;
+  justify-content: center;
+
+}
+
+.item1 {
+  grid-row:1 / 3;
+  grid-column: 1 / 3;
+}
+
+
+#education ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+#education ul li h5 {
+  padding: 3vh 0px;
+}
+
+#education ul li p {
+  padding: 1vh 0;
+}
+
+.personal-info h1 {
+  background-color: #0093E9;
+  background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
+  font-weight: 700;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
