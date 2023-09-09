@@ -1,15 +1,21 @@
-function openTab(event, tabName) {
-    var i, tabLink, tabContent;
-    tabLink = document.getElementsByClassName('tab-link');
-    for(i = 0; i < tabLink.lenght; i++){
-        tabContent[i].classList.remove("active-link");
-    }
+var tabs = document.querySelectorAll(".tab-link")
+var contents = document.querySelectorAll('.tab-content');
 
-    tabContent = document.getElementsByClassName('tab-content');
-    for(i = 0; i < tabContent.lenght; i++){
-        tabContent[i].classList.remove("active-content");
-    }
-    document.getElementById('tabName').classList.add('active-link')
-    event.currentTarget.className+= " active"
+tabs.forEach((tab, index) => {
+    tab.addEventListener("click", () => {
+        tabs.forEach((otherTab) => {
+            otherTab.classList.remove('active-link');
+        });
+        tab.classList.add('active-link');
 
-}
+        contents.forEach((content) => {
+            content.classList.remove('active-content');
+        });
+        
+        contents[index].classList.add("active-content");
+    });
+
+    
+});
+
+
