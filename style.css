@@ -247,6 +247,7 @@ nav ul li a {
   border-radius: 50%;
   width: 34vw;
   height: 34vw;
+  object-fit: cover;
  
 }
 
@@ -430,9 +431,10 @@ form input, form textarea {
   padding: 2.5vh 20vw 2.5vh 1vw;
   margin: 2vh 0;
   font-size: 1.3rem;
-  color: #fff;
+  color: white;
   background-color: rgba(255, 255, 255, 0.1);
   border: 2px solid rgba(255, 255, 255, 0.1);
+  text-decoration: none;
 }
 
 .socialIcon a {
@@ -531,4 +533,17 @@ form button {
 
 .personal-info {
   position: relative;
+}
+
+::placeholder {
+  color: white;
+  opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+ color: white;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+ color: white;
 }
