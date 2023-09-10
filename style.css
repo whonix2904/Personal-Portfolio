@@ -4,29 +4,30 @@
   @import url("https://fonts.googleapis.com/css2?family=Jost:wght@100;300;400;800;900&family=Poppins:wght@300;500;700;800;900&display=swap");
 }
 
-html {
-  scroll-behavior: smooth;
-  scrollbar-arrow-color: red;
+
+body, html {
+  overflow: hidden;
 }
-body {
+
+.page {
+  display: flex;
   align-items: center;
   justify-content: center;
-  display: flex;
-  overflow-x: hidden;
+  width: 100vw;
+  height: 100vh;
 }
 
 body::-webkit-scrollbar{
   display: none;
 }
-
-.background {
-  background-color: black;
-  top: 0;
-  
+.glass::-webkit-scrollbar{
+  display: none;
 }
+body {
+  background: radial-gradient(circle at 1.8% 4.8%, rgb(17, 23, 58) 0%, rgb(58, 85, 148) 90%);}
 
 header {
-  height: 10vh;
+  height: 15vh;
   width: 100%;
   /* background-color: rgb(255, 255, 255); */
   align-items: center;
@@ -41,10 +42,18 @@ header {
 
 .glass {
   /* overflow: hidden; */
-  background-color: rgba(255, 255, 255, 0.1);
-  /* border: 2px solid rgba( 255, 255, 255, 0.05); */
+  background-color: rgba(255, 255, 255, 0.2);
+  border: 2px solid rgba(255, 255, 255, 0.281);
+  border-radius: 20px;
   -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
+ width: 95%;
+ height: 95%;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+justify-self: center;
+align-self: center;
+
 }
 
 .page1, .page2, .page4 {
@@ -210,11 +219,10 @@ nav ul li a {
   height: 35vw;
   /* background-color: rgb(255, 255, 255); */
   border-radius: 50%;
-  
-  background-color: rgba(255, 255, 255, 0.3);
+  /* background-color: rgba(255, 255, 255, 0.3);
   border: 2px solid rgba( 255, 255, 255, 0.1);
   -webkit-backdrop-filter: blur(10px);
-  backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px); */
 }
 
 .right,
@@ -246,7 +254,7 @@ nav ul li a {
 }
 
 .left, .right ,.main-project {
-  z-index: 1;
+  /* z-index: 1; */
 }
 
 .aboutMe {
@@ -385,7 +393,7 @@ width: 70px;
 }
 
 .page2 .right .aboutMe{
-  bottom: 20vh;
+  bottom: 15vh;
   position: relative;
 } 
 
@@ -400,24 +408,22 @@ width: 70px;
   margin-right: 8vw;
   padding: 2vh 2vw;
   border-radius: 10px;
-  -webkit-box-shadow: 5px 5px 40px 0px rgba(255,255,255,0.1);
+  /* -webkit-box-shadow: 5px 5px 40px 0px rgba(255,255,255,0.1);
 -moz-box-shadow: 5px 5px 40px 0px rgba(255,255,255,0.1);
-box-shadow: 5px 5px 40px 0px rgba(255,255,255,0.1);
+box-shadow: 5px 5px 40px 0px rgba(255,255,255,0.1); */
 }
 
 
 
 form input, form textarea {
-  /* width: 100%; */
+
   border-radius: 5px;
   padding: 2.5vh 20vw 2.5vh 1vw;
   margin: 2vh 0;
   font-size: 1.3rem;
   color: #fff;
-  background-color: rgba(0, 0, 0, 0.1);
-  border: 2px solid rgba(255, 255, 255, 0.103);
-  -webkit-backdrop-filter: blur(10px);
-  backdrop-filter: blur(10px);
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 2px solid rgba(255, 255, 255, 0.1);
 }
 
 .socialIcon a {
@@ -470,8 +476,6 @@ form button {
   font-size: 1.2rem;
   border-radius: 5px;
   border: 2px solid rgba(255, 255, 255, 0.103);
-  -webkit-backdrop-filter: blur(10px);
-  backdrop-filter: blur(10px);
   background-color: rgba(240, 248, 255, 0);
   color: white;
   font-family: "poppins" sans-serif;
@@ -514,4 +518,8 @@ form button {
   font-weight: 700;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+.personal-info {
+  position: relative;
 }
