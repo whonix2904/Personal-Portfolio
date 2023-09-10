@@ -15,7 +15,7 @@ body, html {
   justify-content: center;
   width: 100vw;
   height: 100vh;
-
+  position: relative;
 }
 
 body::-webkit-scrollbar{
@@ -39,6 +39,7 @@ header {
   margin: 0;
   padding: 0;
   z-index: 10;
+  position: -webkit-sticky;
 }
 
 .glass {
@@ -63,6 +64,10 @@ align-self: center;
   display: grid;
   grid-template-columns: 50% 50%;
 
+}
+.pages {
+  position: relative;
+  top:-15vh;
 }
 
  .left {
@@ -107,31 +112,32 @@ align-self: center;
 } */
 
 .square1 {
-  height: 15vh;
-  width: 15vw;
-  position: absolute;
-  background-color: red;
+  height: 45vw;
+  width: 45vw;
+  background-color: rgb(255, 0, 0);
   top: 15vh;
-  left: 23vw;
-  filter: blur(100px) saturate(180%);
+  left: 3vw;
+  filter: blur(200px) saturate(180%);
   overflow: hidden;
+  border-radius: 100%;
+  position: fixed;
 }
 
 .square2 {
-  height: 15vh;
-  width: 15vw;
-  position: absolute;
+  height: 45vw;
+  width: 45vw;
   background-color: rgb(38, 0, 255);
-  top: 50vh;
-  right: 70vw;
-  left: 70vw;
+  top: 20vh;
+  left: 40vw;
   filter: blur(200px) saturate(180%);
+  -webkit-filter: blur(200px)saturate(180%);
+  border-radius: 100px;
+  position: fixed;
 }
 
 .square3 {
   height: 30vh;
   width: 30vw;
-  position: absolute;
   background-color: rgb(255, 95, 46);
   top: 250vh;
   left: 60vw;
@@ -142,12 +148,12 @@ align-self: center;
 .square4 {
   height: 30vh;
   width: 30vw;
-  position: absolute;
   background-color: rgb(255, 48, 48);
   top: 80vh;
   left: 20vw;
   filter: blur(200px) saturate(180%);
   overflow: hidden;
+  -webkit-filter: blur(100px) saturate(180%);
 }
 
 .title,
@@ -213,6 +219,7 @@ nav ul li a {
   text-align: center;
   font-size: 1.2em;
   font-family: "Poppins", sans-serif;
+  animation: top-in 2s ease-in 0s;
 }
 
 .circle {
@@ -246,12 +253,13 @@ nav ul li a {
 .square5 {
   width: 30vw;
   height: 30vw;
-  background-color: rgb(91, 245, 30);
-  position: absolute;
+  background-color: rgb(102, 128, 243);
   top: 30vh;
   left: 58vw;
   border-radius: 50%;
   filter: blur(100px);
+  position: fixed;
+  -webkit-filter: blur(100px);
 }
 
 .left, .right ,.main-project {
