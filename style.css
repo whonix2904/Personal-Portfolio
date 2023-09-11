@@ -52,16 +52,17 @@ header {
   background-color: rgba(255, 255, 255, 0.2);
   border: 2px solid rgba(255, 255, 255, 0.3);
   border-radius: 20px;
-  /* -webkit-backdrop-filter: blur(10px);*/
-   /* backdrop-filter: blur(10px);   */
+  -webkit-backdrop-filter: blur(10px);
+   backdrop-filter: blur(10px);  
   width: 95%;
   height: 95%;
   overflow-y: scroll;
   scroll-behavior: smooth;
   justify-self: center;
   align-self: center;
-  animation: scale-in-center 1.5s cubic-bezier( 0.16, 0.94, 0.89, 1 ) forwards;
+  /* animation: scale-in-center 1.5s cubic-bezier( 0.16, 0.94, 0.89, 1 ) forwards; */
   opacity: 0;
+  z-index: 1;
 }
 
 .page1,
@@ -116,15 +117,17 @@ header {
   align-items: center;
   justify-content: center;
 } */
-
+.square1,.square2,.square5{
+  opacity: 0;
+}
 .square1 {
   height: 45vw;
   width: 45vw;
   background-color: rgb(255, 0, 0);
   top: 15vh;
   left: 3vw;
-  filter: blur(200px) saturate(8);
-  -webkit-filter:blur(200px) saturate(8);
+  filter: blur(100px) ;
+  -webkit-filter:blur(100px);
   overflow: hidden;
   border-radius: 100%;
   position: fixed;
@@ -136,8 +139,8 @@ header {
   background-color: rgb(38, 0, 255);
   top: 20vh;
   left: 40vw;
-  filter: blur(200px) saturate(1.8);
-  -webkit-filter: blur(200px) saturate(1.8);
+  filter: blur(100px);
+  -webkit-filter: blur(100px) ;
   border-radius: 100px;
   position: fixed;
 }
@@ -150,8 +153,8 @@ header {
   top: 30vh;
   left: 58vw;
   border-radius: 50%;
-  filter: blur(100px);
-  -webkit-filter: blur(100px);
+  filter: blur(50px);
+  -webkit-filter: blur(50px);
   position: fixed;
   
 }

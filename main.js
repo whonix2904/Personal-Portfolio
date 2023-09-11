@@ -41,9 +41,42 @@ rightAnimation.forEach((right1, index) => {
 var pages = document.querySelectorAll('.page1,.page2,.page3,.page4');
 console.log(pages);
 pages.forEach((page, index) => {
-    console.log(index);
+    // console.log(index);
 });
 
-const observer = new IntersectionObserver(entries => {
-    console.log(entries)
-  })
+var page = document.querySelector('.page');
+var colors = Array.from(page.children).filter(element => element.tagName === 'DIV');
+colors.forEach((color, index) => {
+  color.style.animation = `scale-in-center 1.5s cubic-bezier(0.16, 0.94, 0.89, 1) ${index * 0.5}s forwards`;
+  console.log(colors);
+});
+
+const square1 = document.querySelector('.square1');
+const square2 = document.querySelector('.square2');
+
+window.addEventListener('scroll', () => {
+    // Calculate the scroll position as a percentage of the total scrollable height
+    const scrollPercentage = (window.scrollY / (document.documentElement.scrollHeight - window.innerHeight)) * 100;
+console.log(window.scrollY);
+console.log(document.documentElement.scrollHeight);
+console.log(window.innerHeight);
+    // Define the animation based on the scroll position for the first square
+    if (scrollPercentage >= 20) {
+        // When the scroll position is 20% or more, show the first square
+        square1.style.opacity = 1;
+    } else {
+        // Otherwise, hide the first square
+        square1.style.opacity = 0;
+    }
+
+    // Define the animation based on the scroll position for the second square
+    if (scrollPercentage >= 40) {
+        // When the scroll position is 40% or more, show the second square
+        square2.style.opacity = 1;
+    } else {
+        // Otherwise, hide the second square
+        square2.style.opacity = 0;
+    }
+});
+
+
