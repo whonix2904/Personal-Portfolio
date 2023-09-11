@@ -204,7 +204,7 @@ nav ul li {
   align-items: center;
   justify-items: center;
   overflow-x: hidden;
-
+  /* animation: top-in 2s ease-out 0s; */
   /* margin:0 10vh 0 10vh; */
 }
 
@@ -219,7 +219,7 @@ nav ul li a {
   text-align: center;
   font-size: 1.2em;
   font-family: "Poppins", sans-serif;
-  animation: top-in 2s ease-in 0s;
+  
 }
 
 .circle {

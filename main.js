@@ -18,4 +18,10 @@ tabs.forEach((tab, index) => {
     
 });
 
+var navAnimation = document.querySelectorAll("nav ul li")
+
+navAnimation.forEach((navA, index) => {
+    navA.style.animation = 'topIn 1s ease-out '+ (index * 0.5) +'s forwards';
+    console.log(index)
+});
 

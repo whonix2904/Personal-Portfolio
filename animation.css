@@ -1,4 +1,4 @@
-@keyframes top-in {
+@keyframes topIn {
     from {
 transform:translateY(-300px);
     }
@@ -7,3 +7,4 @@ transform:translateY(-300px);
         transform:translateY(0px);
     }
 }
+
