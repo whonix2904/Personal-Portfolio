@@ -21,7 +21,7 @@ tabs.forEach((tab, index) => {
 var navAnimation = document.querySelectorAll("nav ul li")
 
 navAnimation.forEach((navA, index) => {
-    navA.style.animation = 'topIn 1s ease-out '+ (index * 0.5) +'s forwards';
+    navA.style.animation = 'topIn 1.5s ease-out '+ (index * 0.3) +'s forwards';
     console.log(index)
 });
 

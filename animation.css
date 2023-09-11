@@ -1,10 +1,16 @@
 @keyframes topIn {
-    from {
+    0% {
 transform:translateY(-300px);
+opacity: 0;
     }
 
-    to {
+    1% {
+        opacity: 1;
+    }
+
+    100% {
         transform:translateY(0px);
+        opacity: 1;
     }
 }
 
