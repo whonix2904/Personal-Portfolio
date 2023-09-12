@@ -6,7 +6,7 @@
 
 body,
 html {
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
 .page {
@@ -48,14 +48,14 @@ header {
 }
 
 .glass {
-  /* overflow: hidden; */
+  overflow: hidden;
   background-color: rgba(255, 255, 255, 0.2);
   border: 2px solid rgba(255, 255, 255, 0.3);
   border-radius: 20px;
   -webkit-backdrop-filter: blur(10px);
    backdrop-filter: blur(10px);  
   width: 95%;
-  height: 95%;
+  height: 95vh;
   overflow-y: scroll;
   scroll-behavior: smooth;
   justify-self: center;
@@ -63,19 +63,28 @@ header {
   /* animation: scale-in-center 1.5s cubic-bezier( 0.16, 0.94, 0.89, 1 ) forwards; */
   opacity: 0;
   z-index: 1;
+  bottom: 15vh;
+  
 }
 
+.page1{
+  top: -15vh;
+  position: relative;
+}
 .page1,
 .page2,
 .page4 {
-  height: 100vh;
+  height: 95vh;
   width: 100%;
   display: grid;
   grid-template-columns: 50% 50%;
+  padding-top: 5vh;
+  
 }
 .pages {
-  position: relative;
-  top: -15vh;
+  position: absolute;
+  /* top: -15vh; */
+  /* overflow: scroll; */
 }
 
 .left {
@@ -103,7 +112,7 @@ header {
 } */
 
 .page3 {
-  height: 100vh;
+  height: 95vh;
   width: 100%;
   display: flex;
   align-items: center;
