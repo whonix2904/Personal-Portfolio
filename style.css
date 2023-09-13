@@ -239,7 +239,7 @@ nav ul li a {
   font-family: "Poppins", sans-serif;
 }
 
-nav ul li::after {
+nav ul li a::after {
   content: "";
   height: 1px;
   width: 80px;
