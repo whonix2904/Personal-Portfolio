@@ -18,12 +18,12 @@ tabs.forEach((tab, index) => {
 
 // scroll reveal animations 
 
-var sr = ScrollReveal({
+var topIn = ScrollReveal({
   origin: 'top',
   distance: '100px',
-  delay : 200,
-  duration: 1000,
-  interval:400,
+  delay : 500,
+  duration: 1500,
+  easing:"ease-out",
 });
 
-ScrollReveal().reveal('.navbar-li', sr);
+topIn.reveal(`.navbar li`, {interval:300});

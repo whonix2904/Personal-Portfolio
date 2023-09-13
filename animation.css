@@ -1,65 +1,107 @@
-@keyframes topIn {
-    0% {
-transform:translateY(-300px);
-opacity: 0;
+@media (max-width: 450px) {
+    .page1,.page2,.page4 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100vw;
+        flex-direction: column;
+        
     }
 
-    1% {
-        opacity: 1;
+    .pages {
+        position: relative;
+        margin-right: 10000px;
     }
 
-    100% {
-        transform:translateY(0px);
-        opacity: 1;
+    .page1 .right {
+        width: 100vw;
+        height: 80vh;
+        position: relative;
     }
+
+    .page1 .right .circle {
+        height: 30vh;
+        width: 30vh;
+      
+    }
+
+    .glass {
+        overflow: hidden;
+        overflow-y: scroll;
+    }
+    header {
+        display: none;
+    }
+
+    .page1 .left {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: baseline;
+        padding: 0 10vw 15vh 10vw;
+
+    }
+
+    .page1 .left h1 {
+        font-size: 2rem;
+        align-self: self-start;
+    }
+
+    .page1 .left p {
+        font-size: 1.2rem;
+    }
+
+    .page1 {
+     top: 2vh;
+     flex-direction: column-reverse;
+        }
+
+        .right {
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: baseline;
+            padding: 0 10vw 0 10vw;
+        }
+
+        .left .image img {
+            width: 30vh;
+            height: 100%;
+            
+        }
+
+        .page2 .left {
+            padding-left: 0;
+        }
+        .tab-title {
+            display: flex;
+            align-self: center;
+            justify-self: center;
+            
+        }
+
+        .heading {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+
+        #education ul li {
+             
+                display: grid;
+                grid-template-columns: 40vw 5vw 40vw;
+                grid-template-rows: 1fr 1fr;
+                align-self: start;
+                justify-content: center;
+            
+        }
+        .active-content {
+            display: block;
+            position: relative;
+        }
+        .page2 .right  {
+            /* bottom: 15vh; */
+            position: relative;
+        }
 }
-
-@keyframes left-in {
-    0% {
-        transform: translateX(-1000px);
-        opacity: 0;
-    }
-
-    1% {
-        opacity: 1;
-    }
-
-    100% {
-        transform: translateX(0px);
-        opacity: 1;
-    }
-}
-
-@keyframes right-in {
-    0% {
-        transform: translateX(1000px);
-        opacity: 0;
-    }
-
-    1% {
-        opacity: 1;
-    }
-
-    100% {
-        transform: translateX(0px);
-        opacity: 1;
-    }
-}
-
-@keyframes scale-in-center {
-    0% {
-      -webkit-transform: scale(0.5);
-              transform: scale(0.5);
-      opacity: 0;
-    }
-    
-    1% {
-        opacity: 1;
-    }
-
-    100% {
-      -webkit-transform: scale(1);
-              transform: scale(1);
-      opacity: 1;
-    }
-  }
