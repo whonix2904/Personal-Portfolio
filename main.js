@@ -20,9 +20,9 @@ tabs.forEach((tab, index) => {
 
 var topIn = ScrollReveal({
   origin: 'top',
-  distance: '100px',
+  distance: '10px',
   delay : 500,
-  duration: 1500,
+  duration: 1000,
   easing:"ease-out",
 });
 
