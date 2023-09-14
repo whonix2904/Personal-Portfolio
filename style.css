@@ -231,7 +231,7 @@ nav ul li a {
   font-family: "Poppins", sans-serif;
 }
 
-nav ul li a::after {
+/* nav ul li a::after {
   content: "";
   height: 1px;
   width: 80px;
@@ -240,7 +240,7 @@ nav ul li a::after {
   bottom: 1px;
   left: 30px;
   border-radius: 100px;
-}
+} */
 
 .circle {
   width: 35vw;

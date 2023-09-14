@@ -27,5 +27,5 @@ var topIn = ScrollReveal({
 });
 
 topIn.reveal(`.navbar li, .projectList`, {interval:300});
-topIn.reveal(`.left`,{delay:100,origin: 'left'});
-topIn.reveal(`.right`,{delay:100,origin: 'right'});
+topIn.reveal(`.left,.left h1,.left p`,{delay:200,origin: 'left',interval:500});
+topIn.reveal(`.right,.heading h1,.heading p,.tab-title,.tab-link,.active-content`,{delay:200,origin: 'right',interval:500});
