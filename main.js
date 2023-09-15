@@ -21,11 +21,11 @@ tabs.forEach((tab, index) => {
 var topIn = ScrollReveal({
   origin: 'top',
   distance: '10px',
-  delay : 500,
+  delay : 100,
   duration: 1000,
   easing:"ease-out",
 });
 
-topIn.reveal(`.navbar li, .projectList`, {interval:300});
-topIn.reveal(`.left,.left h1,.left p`,{delay:200,origin: 'left',interval:500});
-topIn.reveal(`.right,.heading h1,.heading p,.tab-title,.tab-link,.active-content`,{delay:200,origin: 'right',interval:500});
+topIn.reveal(`.navbar li a, .projectList`, {interval:200});
+topIn.reveal(`.left,.left h1,.left p`,{delay:1000,origin: 'left',interval:500});
+topIn.reveal(`.right,.heading h1,.heading p,.tab-title,.tab-link,.active-content`,{delay:1000,origin: 'right',interval:500});
