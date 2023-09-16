@@ -26,6 +26,6 @@ var topIn = ScrollReveal({
   easing:"ease-out",
 });
 
-topIn.reveal(`.navbar li a, .projectList`, {interval:200});
+topIn.reveal(`.navbar li a, .projectList,.socialIcon a i`, {interval:400,distance:"100px"});
 topIn.reveal(`.left,.left h1,.left p`,{delay:1000,origin: 'left',interval:500});
-topIn.reveal(`.right,.heading h1,.heading p,.tab-title,.tab-link,.active-content`,{delay:1000,origin: 'right',interval:500});
+topIn.reveal(`.right,.heading h1,.heading p,.tab-title,.tab-link,.active-content,.left personal-info li`,{delay:1000,origin: 'right',interval:500});
