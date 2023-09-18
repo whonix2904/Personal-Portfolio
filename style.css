@@ -246,16 +246,23 @@ nav ul li a {
   font-family: "Poppins", sans-serif;
 }
 
-/* nav ul li a::after {
-  content: "";
-  height: 1px;
-  width: 80px;
-  background-color: red;
+nav ul li a::after {
+  content: " ";
+  height: 3px;
+  width: 80%;
+  background-color: rgb(255, 255, 255);
   position: absolute;
-  bottom: 1px;
-  left: 30px;
-  border-radius: 100px;
-} */
+  border-radius: 10%;
+  display: block;
+  transform: scaleX(0);
+  transition: transform .3s;
+  transform-origin: right;
+}
+
+nav ul li a:hover:after{
+  transform: scaleX(1);
+  transform-origin: left;
+}
 
 .circle {
   width: 35vw;
@@ -400,6 +407,8 @@ nav ul li a {
   display: flex;
   align-items: center;
   justify-content: center;
+  position: relative;
+  display: block;
 }
 
 
@@ -531,6 +540,23 @@ form button {
   grid-template-rows: 1fr 1fr;
   align-self: start;
   justify-content: center;
+}
+.tab-link:hover::after {
+  content: "";
+  height: 3px;
+  width: 100%;
+  background-color: rgb(255, 255, 255);
+  position: absolute;
+  border-radius: 10%;
+  display: block;
+  transform: scaleX(0);
+  transition: transform .3s;
+  transform-origin: right;
+}
+
+.tab-link:hover::after {
+  transform: scaleX(1);
+  transform-origin: left;
 }
 
 .item1 {
