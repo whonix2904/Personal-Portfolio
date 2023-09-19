@@ -343,6 +343,10 @@ nav ul li a:hover:after{
   aspect-ratio: 16/9;
   height: 30vh;
   border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
 }
 
 .imagesofproject {
@@ -364,6 +368,7 @@ nav ul li a:hover:after{
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  overflow: hidden;
 }
 
 .projectList h1 {
@@ -603,4 +608,15 @@ form button {
 ::-ms-input-placeholder {
   /* Microsoft Edge */
   color: white;
+}
+
+
+.card{
+  position: absolute;
+  background-color: black;
+  width: 1000vw;
+  height: 15vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
