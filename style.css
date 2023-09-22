@@ -1,7 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@200;300;400;500;600;700&family=Jost:wght@100;300;400;800;900&family=Poppins:wght@300;500;700;800;900&display=swap');
+
+
+
 * {
   padding: 0;
   margin: 0;
-  @import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@200;300;400;500;600;700&family=Jost:wght@100;300;400;800;900&family=Poppins:wght@300;500;700;800;900&display=swap');
 }
 
 body,
@@ -177,12 +180,12 @@ position: fixed;
 }
 .aboutMe{
   color: #feeafa;
-  font-family: "Jost", sans-serif;
+  font-family: "jost", sans-serif;
 }
 .title {
   font-size: 3em;
  
-  font-family: 'Poppins',sans-serif;
+  font-family: 'Bai Jamjuree', sans-serif;
   font-weight: 200;
 
 
@@ -209,7 +212,7 @@ position: fixed;
   font-family: 'Bai Jamjuree', sans-serif;
   font-weight: 900;
   /* font-family: 'Jost', sans-serif; */
-  font-size: 3.5rem;
+  font-size: 4rem;
 }
 
 nav {
@@ -342,11 +345,9 @@ nav ul li a:hover:after{
 .imagesofproject img {
   aspect-ratio: 16/9;
   height: 30vh;
-  border-radius: 5px;
   display: flex;
   align-items: center;
   justify-content: center;
-  overflow: hidden;
 }
 
 .imagesofproject {
@@ -357,7 +358,6 @@ nav ul li a:hover:after{
 
   align-items: center;
   justify-content: center;
-  width: 100%;
   height: 85vh;
   overflow: hidden;
   overflow-y: scroll;
@@ -547,7 +547,7 @@ form button {
   justify-content: center;
 }
 .tab-link:hover::after {
-  content: "";
+  content: " ";
   height: 3px;
   width: 100%;
   background-color: rgb(255, 255, 255);
@@ -562,6 +562,7 @@ form button {
 .tab-link:hover::after {
   transform: scaleX(1);
   transform-origin: left;
+  transition: transform .3s;
 }
 
 .item1 {
@@ -610,13 +611,33 @@ form button {
   color: white;
 }
 
-
+.imgcard{
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+}
 .card{
-  position: absolute;
-  background-color: black;
-  width: 1000vw;
-  height: 15vh;
   display: flex;
   align-items: center;
   justify-content: center;
+  position: absolute;
+  gap: 5vw;
+  background-color: rgba(0, 0, 0, 0.452);
+  width: 10000px;
+  height: 10000px;
+
+}
+
+.card .link, .card .code {
+  height: 7vh;
+  width: 7vw;
+  border-radius:5px;
+  font-family: "poppins", sans-serif;
+  font-size: 1em;
+  background-color: rgba(255, 0, 0, 0);
+  border-color: #edf2f4;
+  border: 1px solid white;
 }
