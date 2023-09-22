@@ -619,18 +619,30 @@ form button {
   overflow: hidden;
   border-radius: 10px;
 }
-.card{
+.imgcard:hover .card{
   display: flex;
   align-items: center;
   justify-content: center;
   position: absolute;
-  gap: 5vw;
   background-color: rgba(0, 0, 0, 0.452);
-  width: 10000px;
-  height: 10000px;
+  width: 100%;
+  height: 100%;
+  transform: translate(0, -100%);
+  opacity: 1;
 
 }
 
+.card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.452);
+  width: 100%;
+  height: 100%;
+  transition: transform 500ms ease-out;
+  top: 100%;
+}
 .card .link, .card .code {
   height: 7vh;
   width: 7vw;
@@ -638,6 +650,25 @@ form button {
   font-family: "poppins", sans-serif;
   font-size: 1em;
   background-color: rgba(255, 0, 0, 0);
-  border-color: #edf2f4;
   border: 1px solid white;
+  color: wheat;
 }
+
+.card .link {
+  right:100%;
+  transition: transform 500ms ease-out;
+  position: relative;
+}
+
+.imgcard:hover .card .link{
+  height: 7vh;
+  width: 7vw;
+  border-radius:5px;
+  font-family: "poppins", sans-serif;
+  font-size: 1em;
+  background-color: rgba(255, 0, 0, 0);
+  border: 1px solid white;
+  color: wheat;
+  transform: translate(-100%, 0);
+}
+
