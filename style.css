@@ -173,7 +173,6 @@ position: fixed;
 }
 
 .title,
-
 .name {
   color: #edf2f4;
  
@@ -184,7 +183,6 @@ position: fixed;
 }
 .title {
   font-size: 3em;
- 
   font-family: 'Bai Jamjuree', sans-serif;
   font-weight: 200;
 
@@ -246,7 +244,7 @@ nav ul li a {
   color: white;
   text-align: center;
   font-size: 1.2em;
-  font-family: "Poppins", sans-serif;
+  font-family: "poppins", sans-serif;
 }
 
 nav ul li a::after {
@@ -314,6 +312,7 @@ nav ul li a:hover:after{
   font-weight: 900;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  font-family: "poppins",sans-serif;
 }
 
 /* .page3 {
@@ -506,26 +505,27 @@ li {
   list-style: none;
 }
 
-ul h1 {
+.personal-info h1 {
   padding: 4vh 0vw;
-  font-size: 4rem;
-  font-family: "Jost", sans-serif;
+  font-size: 5rem;
+  font-family: "jost", sans-serif;
   font-weight: 500;
 }
 
 .personal-info li h3,
 .personal-info li p {
-  font-family: "poppins", sans-serif;
   margin: 2vh 0px;
 }
 
 li h3 {
-  font-weight: 900;
+  font-weight: 700;
   font-size: 1.5rem;
+  font-family: "poppins",sans-serif;
 }
 
 li p {
   font-size: 1rem;
+  font-family: "Bai Jamjuree",sans-serif;
 }
 
 form button {
@@ -546,7 +546,7 @@ form button {
   align-self: start;
   justify-content: center;
 }
-.tab-link:hover::after {
+.tab-link::after {
   content: " ";
   height: 3px;
   width: 100%;
@@ -642,33 +642,36 @@ form button {
   height: 100%;
   transition: transform 500ms ease-out;
   top: 100%;
+  gap: 5vw;
 }
 .card .link, .card .code {
-  height: 7vh;
-  width: 7vw;
+  height: 6vh;
+  width: 6vw;
   border-radius:5px;
   font-family: "poppins", sans-serif;
   font-size: 1em;
   background-color: rgba(255, 0, 0, 0);
   border: 1px solid white;
   color: wheat;
+  transition: 100ms;
 }
 
-.card .link {
-  right:100%;
-  transition: transform 500ms ease-out;
-  position: relative;
+.card .link:hover, .card .code:hover {
+  height: 8vh;
+  width: 8vw;
+  font-size: 2em;
+  transition: 200ms;
 }
 
-.imgcard:hover .card .link{
-  height: 7vh;
-  width: 7vw;
-  border-radius:5px;
-  font-family: "poppins", sans-serif;
-  font-size: 1em;
-  background-color: rgba(255, 0, 0, 0);
-  border: 1px solid white;
-  color: wheat;
-  transform: translate(-100%, 0);
-}
+
+/* .card .link:hover, .card .code:hover {
+  height: 9vh;
+  width: 9vw;
+  font-size: 2em;
+  transition: 200ms;
+} */
+
+
+
+
 
