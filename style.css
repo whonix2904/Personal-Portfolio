@@ -354,7 +354,6 @@ nav ul li a:hover:after{
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
   gap: 2rem;
-
   align-items: center;
   justify-content: center;
   height: 85vh;
@@ -507,7 +506,7 @@ li {
 
 .personal-info h1 {
   padding: 4vh 0vw;
-  font-size: 5rem;
+  font-size: 4rem;
   font-family: "jost", sans-serif;
   font-weight: 500;
 }
@@ -662,14 +661,6 @@ form button {
   font-size: 2em;
   transition: 200ms;
 }
-
-
-/* .card .link:hover, .card .code:hover {
-  height: 9vh;
-  width: 9vw;
-  font-size: 2em;
-  transition: 200ms;
-} */
 
 
 

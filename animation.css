@@ -104,4 +104,8 @@
             /* bottom: 15vh; */
             position: relative;
         }
+
+        .imagesofproject {
+            grid-template-columns: 90vw;
+        }
 }
